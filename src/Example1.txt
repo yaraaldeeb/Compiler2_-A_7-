@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ProductListComponent } from "./productlist/productlist.component";
+import { ProductDetailComponent } from "./productdetail/productdetail.component";
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, ProductListComponent, ProductDetailComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  selectedProduct: any;
+
+  selectProduct(product: any) {
+    this.selectedProduct = product;
+    let x: string = "Hello";
+
+    foreach(x:number : mylist) {
+        this.product = x
+    }
+  }
+
+  selectProduct(x: any) { }
+}
